@@ -1,0 +1,47 @@
+name: Bug report
+description: Report behavior that does not match what the application should do.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for reporting a bug. Do not include passwords, personal student data, or other secrets.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the problem clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: List the actions that cause the problem.
+      placeholder: |
+        1. Sign in as ...
+        2. Open ...
+        3. Select ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior or error
+      description: Include the error text, with secrets and personal data removed.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Java version, and how you launched the application.
+      placeholder: Fedora 44, Java 21, mvn javafx:run
+    validations:
+      required: true

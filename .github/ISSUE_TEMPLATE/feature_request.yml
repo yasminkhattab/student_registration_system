@@ -1,0 +1,31 @@
+name: Feature request
+description: Suggest a useful improvement or new capability.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: Explain the user need so contributors can discuss a focused solution.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should this solve?
+      description: Describe the current limitation or user need.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe what you would like the application to do.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: How could we tell it is complete?
+      description: List examples or acceptance criteria.
+      placeholder: |
+        - A student can ...
+        - The application shows ...
+    validations:
+      required: false
